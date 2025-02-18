@@ -1,16 +1,15 @@
 /*! 
- * Template Name: DevResume - Bootstrap 4 Resume/CV Template for Software Developers
- * Version: 1.0
+ * Template Name: DevResume - Bootstrap 5 Resume/CV Template for Software Developers
+ * Version: Bootstrap 5 v3.1
  * Author: Xiaoying Riley
- * Copyright: 3rd Wave Media
+ * Copyright: 3rd Wave Media Ltd.
  * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
  * Website: http://themes.3rdwavemedia.com/
 */
 
 /*************************** Theme Colours****************************/
 // Define theme colour scheme
-$theme-color-primary: #03A9F4;
+$theme-color-primary: #54B689;
 $theme-text-color-primary: #292929;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
 $theme-text-color-light: lighten($theme-text-color-primary, 40%);
@@ -28,10 +27,9 @@ $gray-700: lighten($theme-text-color-primary, 20%);
 $gray-800: lighten($theme-text-color-primary, 10%);
 $gray-900: $theme-text-color-primary;
 
-$theme-colors: (
-  "primary":  $theme-color-primary, 
-  "secondary":  $theme-text-color-secondary, 
-);
+/* Override BS5 sass color */
+$primary: $theme-color-primary;
+$secondary: $theme-text-color-secondary;
 
 /*************************** Import Bootstrap  *****************************/
 @import "bootstrap/scss/bootstrap.scss";
